@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="rocko"/>
+
+  <!-- Remotes -->
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/Freescale" name="freescale"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
+
+  <!-- Yocto project layers -->
+  <project remote="yocto" name="poky" path="sources/poky" revision="90414ecd5cf72995074f3dc6b05cfbee0a1dab67"/>
+  <project remote="yocto" name="meta-freescale" path="sources/meta-freescale" revision="15f14f7eb30dde0488a04fbca6a2ac997eeace30"/>
+
+  <!-- Open Embedded layers -->
+  <project remote="oe" name="meta-openembedded" path="sources/meta-openembedded" revision="dacfa2b1920e285531bec55cd2f08743390aaf57"/>
+
+  <!-- Freescale BSP Community layers -->
+  <project remote="freescale" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" revision="a02324e27f7a7ac630dab616f46a8bad7fe2c071"/>
+  <project remote="freescale" name="meta-freescale-distro" path="sources/meta-freescale-distro" revision="51756d1c2058139c8a21f89b86cfd8007b71b7f0"/>
+  <project remote="freescale" name="Documentation" path="sources/Documentation" revision="04f80738d15ff54d37cae329852f88f5f7ee8ab7"/>
+
+  <!-- QT5 core layers -->
+  <project remote="qt5" name="meta-qt5" path="sources/meta-qt5" revision="fe6dbe144acbcbcbe37f5e9a07a08e414dbce036"/>
+
+</manifest>
+
