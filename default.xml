@@ -3,11 +3,18 @@
 
   <default sync-j="4" revision="rocko"/>
 
-  <!-- Remotes -->
+  <!-- COTs Remotes -->
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/Freescale" name="freescale"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
+  <!-- Not COTs remotes -->
+  <remote fetch="https://github.com/NaejEL" name="naejel"/>
+
+  <!-- Yocto layer configuration and evironment -->
+  <project remote="naejel" revision="master" name="adlink-lec-imx6-distrib-base" path="sources/base">
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
 
   <!-- Yocto project layers -->
   <project remote="yocto" name="poky" path="sources/poky" revision="90414ecd5cf72995074f3dc6b05cfbee0a1dab67"/>
@@ -19,11 +26,12 @@
   <!-- Freescale BSP Community layers -->
   <project remote="freescale" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" revision="a02324e27f7a7ac630dab616f46a8bad7fe2c071"/>
   <project remote="freescale" name="meta-freescale-distro" path="sources/meta-freescale-distro" revision="51756d1c2058139c8a21f89b86cfd8007b71b7f0"/>
-  <project remote="freescale" name="fsl-community-bsp-base" path="sources/fsl-community-bsp-base" revision="6e0d5d90fa8dd0c7abee04bbe103bc6a5ff8a8f7"/>
   <project remote="freescale" name="Documentation" path="sources/Documentation" revision="04f80738d15ff54d37cae329852f88f5f7ee8ab7"/>
 
   <!-- QT5 core layers -->
   <project remote="qt5" name="meta-qt5" path="sources/meta-qt5" revision="fe6dbe144acbcbcbe37f5e9a07a08e414dbce036"/>
 
-</manifest>
+  <!-- Sectronic layers -->
+  <project remote="naejel" revision="ba16257b1adadd32bdba55fdf4d86ca357a28247" name="meta-adlink-lec-imx6" path="sources/meta-adlink-lec-imx6"/>
 
+</manifest>
