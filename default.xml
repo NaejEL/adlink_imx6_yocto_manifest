@@ -17,7 +17,7 @@
   </project>
 
   <!-- Yocto project layers -->
-  <project remote="yocto" name="poky" path="sources/poky" revision="cbb677e9a09d5dad34404a851f7c23aeb5122465"/>
+  <project remote="yocto" name="poky" path="sources/poky" revision="c83e52cef05db827d526fd62439718fb88931379"/>
   <project remote="yocto" name="meta-freescale" path="sources/meta-freescale" revision="15f14f7eb30dde0488a04fbca6a2ac997eeace30"/>
 
   <!-- Open Embedded layers -->
