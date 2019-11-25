@@ -21,7 +21,7 @@
   <project remote="yocto" name="meta-freescale" path="sources/meta-freescale" revision="15f14f7eb30dde0488a04fbca6a2ac997eeace30"/>
 
   <!-- Open Embedded layers -->
-  <project remote="oe" name="meta-openembedded" path="sources/meta-openembedded" revision="53d431639a1ef93992fa2b7da229f167e23e7a23"/>
+  <project remote="oe" name="meta-openembedded" path="sources/meta-openembedded" revision="eae996301d9c097bcbeb8046f08041dc82bb62f8"/>
 
   <!-- Freescale BSP Community layers -->
   <project remote="freescale" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" revision="a02324e27f7a7ac630dab616f46a8bad7fe2c071"/>
